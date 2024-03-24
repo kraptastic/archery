@@ -1,75 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="styles/styles.css">
-	  <title>Archery Academy Landing Page</title>
-	</head>
-	<body>
-        <header>
-            <img src="images/archeryAcademy-logo-white.png" alt="archery academy logo" width="250" height="250">
-            <nav><ul>
-                <li><a href="">Schedule</a></li><li> / </li>
-                <li><a href="">Programs</a></li><li> / </li>
-                <li><a href="instructors.html">Instructors</a></li><li> / </li>
-            </ul></nav>
-            <div>
-                <img src="images/fontawesome-map.png" alt="map icon. click for link to map" width="50" height="40">
-                <p>Straight to the Point Archery
-                528 Nock Point Ln
-                Tacoma, WA 98412
-                archery-education@example.com
-                (253)555-1010
-                </p>
-            </div>
-        </header>
-        <section>
-            <h3>Welcome to Tacoma's premier non-profit indoor archery club.</h3>
-            <p>Straight to the Point Archery is a non
-                profit archery education center founded
-                in 2005 by Giap Nguyen. Our state of
-                the art educational and training facility
-                incorporates detailed technical video
-                analysis combined with generations of
-                archery experience from certified
-                coaches and instructors.</p>
-        </section>
-        <iframe width="420" height="315"
-src="https://www.pexels.com/video/close-up-of-arrow-hitting-target-6668765/">
-        </iframe>
-        <div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles-grid.css" />
+    <title>Archery Academy Landing Page</title>
+    <script
+      src="https://kit.fontawesome.com/cdd709569d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo-block">
+          <img
+            src="images/archeryAcademy-logo-white.png"
+            alt="archery academy logo"
+            width="200rem"
+            height="100rem"
+          />
+          <nav>
             <ul>
-                <li>
-                    <img src="images/fontawesome-map.png" alt="icon of calendar, click for link to schedule" width="80" height="120">
-                    <h3>Schedule</h3>
-                    <p>View closure announcements, upcoming events, and event calendar</p>
-                </li>
-                <li>
-                    <img src="images/fontawesome-map.png" alt="icon of a list, click for link to programs and offerrings" width="80" height="120">
-                    <h3>Programs</h3>
-                    <p>Discover our classes and instructional offerings as well as our technical video analysis</p>
-                </li>
-                <li>
-                    <img src="images/fontawesome-map.png" alt="icon of a person's silhouette, click for link to instructor profiles" width="80" height="120">
-                    <h3>Instructors</h3>
-                    <p>Meet the talented staff who contribute X years of diverse archery and training experience.</p>
-                </li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li>/</li>
+              <li><a href="programs.html">Programs</a></li>
+              <li>/</li>
+              <li><a href="instructors.html">Instructors</a></li>
             </ul>
+          </nav>
         </div>
-        <footer>
-            <img src="images/archeryAcademy-logo-white.png" alt="archery academy logo" width="200" height="150">
-            <p>Straight to the Point Archery’s staff has decades of experience in the archery industry.
-                We are committed to educating you with any questions that you may have.</p>
-            <nav>
-                <ul>
-                    <li>Schedule</li><li> / </li>
-                    <li>Programs</li><li> / </li>
-                    <li>Instructors</li><li> / </li>
-                </ul>
-            </nav>
-            <p>2024 Archery Academy  |  Tacoma, WA</p>
-        </footer>
-        <div class="hr-yellow"></div>
-	</body>
+        <div class="address">
+          <p>
+            Straight to the Point Archery<br /><i
+              class="fa-solid fa-map-location-dot fa-2xl"
+            ></i
+            >528 Nock Point Ln<br />Tacoma, WA 98412<br />
+            archery-education@example.com<br />(253)555-1010
+          </p>
+        </div>
+      </header>
+      <div class="banner">
+        <section>
+          <h3>Welcome to Tacoma's premier non-profit indoor archery club.</h3>
+          <p>
+            Straight to the Point Archery is a non profit archery education
+            center founded in 2005 by Giap Nguyen. Our state of the art
+            educational and training facility incorporates detailed technical
+            video analysis combined with generations of archery experience from
+            certified coaches and instructors.
+          </p>
+        </section>
+
+        <video width="600rem" height="350rem" controls muted>
+          <source src="videos/arrow.mp4" type="video/mp4" />
+          Sorry, your browser does not support this video format
+        </video>
+      </div>
+      <div class="icon-bar">
+        <ul>
+          <a href="schedule.html"
+            ><li class="schedule">
+              <i class="fa-regular fa-calendar-days fa-2xl"></i>
+              <h3>Schedule</h3>
+              <p>
+                View closure announcements, upcoming events, and event calendar
+              </p>
+            </li></a
+          >
+          <a href="programs.html"
+            ><li class="programs">
+              <i class="fa-solid fa-list-check fa-2xl"></i>
+              <h3>Programs</h3>
+              <p>
+                Discover our classes and instructional offerings as well as our
+                technical video analysis
+              </p>
+            </li></a
+          >
+          <a href="instructors.html"
+            ><li class="instructors">
+              <i class="fa-solid fa-user-ninja fa-2xl"></i>
+              <h3>Instructors</h3>
+              <p>
+                Meet the talented staff who contribute X years of diverse
+                archery and training experience.
+              </p>
+            </li></a
+          >
+        </ul>
+      </div>
+      <footer>
+        <img
+          src="images/archeryAcademy-logo-white.png"
+          alt="archery academy logo"
+          width="150rem"
+          height="75rem"
+        />
+        <p>
+          Straight to the Point Archery’s staff has decades of experience in the
+          archery industry. We are committed to educating you with any questions
+          that you may have.
+        </p>
+        <nav>
+          <ul>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li>&nbsp;/&nbsp;</li>
+            <li><a href="programs.html">Programs</a></li>
+            <li>&nbsp;/&nbsp;</li>
+            <li><a href="instructors.html">Instructors</a></li>
+          </ul>
+        </nav>
+        <p>2024 Archery Academy | Tacoma, WA</p>
+      </footer>
+      <div class="hr-yellow"></div>
+    </div>
+  </body>
 </html>
