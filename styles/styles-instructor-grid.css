@@ -121,8 +121,19 @@ footer li {
   color: white;
 }
 header nav {
-  color: white;
   padding: 1rem;
+}
+header nav a,
+footer nav a,
+header li,
+footer li {
+  color: white;
+  text-decoration: none;
+}
+.instructor-link {
+  color: #1b447f;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 article {
   padding: 1rem 5rem 2rem 5rem;
@@ -166,11 +177,7 @@ h4 {
 main nav {
   margin-bottom: 2rem;
 }
-a,
-a:link {
-  color: white;
-  text-decoration: none;
-}
+
 a:hover,
 a:focus {
   filter: contrast(200%) drop-shadow(5px 5px 5px gold);
