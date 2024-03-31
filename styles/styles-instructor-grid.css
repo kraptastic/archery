@@ -55,6 +55,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: auto;
+  padding-bottom: 1rem;
 }
 .instructor-pic {
   margin: 2rem 1rem 0 3rem;
@@ -115,8 +116,9 @@ footer p {
   padding: 0;
 }
 footer li {
-  padding: 0;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   margin: 0;
+  color: white;
 }
 header nav {
   color: white;
@@ -140,7 +142,6 @@ header a,
 header a:link,
 footer a,
 footer a:link {
-  color: white;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
@@ -167,12 +168,12 @@ main nav {
 }
 a,
 a:link {
-  color: #03a3df;
+  color: white;
   text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 700;
 }
-a:hover {
+a:hover,
+a:focus {
+  filter: contrast(200%) drop-shadow(5px 5px 5px gold);
   color: #444444;
 }
 
@@ -217,4 +218,15 @@ hr {
   margin: 0;
   padding: 0;
   grid-area: hr-yellow;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  width: 0px;
+  height: 0px;
+}
+.hidden:focus {
+  left: 0;
 }
